@@ -1,3 +1,26 @@
 * {
     box-sizing: border-box;
 }
+
+.mb-3 {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.mb-3 input {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.form-control {
+    position: relative;
+    width: 50%;
+}
