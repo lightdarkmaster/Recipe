@@ -32,7 +32,73 @@
 
 .intro {
     position: relative;
+    font-family: 'Inter', sans-serif;
     height: 100vh;
     width: 100%;
-    z-index: -3;
+    left: 30%;
+    z-index: 0;
+}
+
+.intro h2 {
+    position: relative;
+    left: 20%;
+    cursor: pointer;
+}
+
+.chef {
+    position: absolute;
+    top: 40%;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay-image {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .intro {
+        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 15%;
+        height: 100vh;
+        width: 50%;
+        left: 40%;
+        z-index: 1;
+    }
+    .intro h2 {
+        left: 20%;
+    }
+    .chef img {
+        position: absolute;
+        top: 40%;
+        width: 300px;
+        z-index: 0;
+    }
 }

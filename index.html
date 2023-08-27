@@ -10,8 +10,12 @@
     <script src="app.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <link href="img/valorant_logo.png" rel="icon">
-    <link href="img/valorant_logo.png" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link href="svg/R.svg" rel="icon">
+    <link href="svg/R.svg" rel="apple-touch-icon">
     <title>Home | Recipe</title>
 </head>
 
@@ -64,9 +68,16 @@
     </nav>
     <section class="wave">
         <img src="svg/wave.svg" alt="SVG Image">
+        <div class="chef" onclick="toggleOverlay()">
+            <img class="image" src="img/chef.png" alt="Image">
+            <div class="overlay" id="overlay">
+                <img class="overlay-image" src="img/chef.png" alt="chef">
+            </div>
+        </div>
     </section>
     <section class="intro">
-
+        <h1>"Where Flavor Meets Imagination"</h1><br>
+        <h2> - Chan-Chan</h2>
     </section>
 </body>
 
