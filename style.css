@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .mb-3 {
@@ -30,13 +32,23 @@
     z-index: 3;
 }
 
+.wave2 {
+    position: absolute;
+    z-index: 3;
+}
+
+.wave3 {
+    position: absolute;
+    top: 82%;
+}
+
 .intro {
     position: relative;
     font-family: 'Inter', sans-serif;
     height: 100vh;
     width: 100%;
     left: 30%;
-    z-index: 0;
+    z-index: 3;
 }
 
 .intro h2 {
@@ -48,6 +60,7 @@
 .chef {
     position: absolute;
     top: 40%;
+    z-index: 3;
 }
 
 .image {
@@ -82,10 +95,11 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 868px) {
     .intro {
         position: relative;
         font-family: 'Inter', sans-serif;
+        font-weight: 500;
         font-size: 15%;
         height: 100vh;
         width: 50%;
