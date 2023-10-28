@@ -90,6 +90,7 @@
 
 .overlay-image {
     position: relative;
+    top: 100px;
     max-width: 80%;
     max-height: 80%;
     border: 2px solid white;
