@@ -258,7 +258,7 @@ def main():
         pygame.display.flip()
         # Set the framerate
         clock.tick(60)
-
-
 if __name__ == "__main__":
     main()
+    
+    #this is a Tetris game.
